@@ -12,6 +12,19 @@ public class Kadane_algorithm {
         for(int i=0;i<size_of_array;i++){
             array[i] = scanner.nextInt ();
         }
+
+        int max_sum=array[0];
+        int a=0;
+        for(int i=0;i<array.length;i++){
+            a=a+array[i];
+            if(a>max_sum){
+                max_sum=a;
+            }
+          if(a<0){
+                a=0;
+            }
+        }
+        System.out.println (max_sum);
     }
 
 }
