@@ -2,6 +2,9 @@ package Array;
 
 import java.util.Scanner;
 
+//This algorithm is used for finding Largest Sum Contiguous Subarray
+
+
 public class Kadane_algorithm {
     public static void main(String[] args) {
         Scanner scanner=new Scanner ( System.in );
