@@ -2,6 +2,8 @@ package Array;
 //find the majority element i.e. element that appears more than n/2 times where n is length of array
 //eg. 7 5 7 2 6 7 7 output-7
 
+//Boyer-Moore Voting Algorithm
+//tc=O(n),spacecomplexity=O(1)
 
 import java.util.Scanner;
 
