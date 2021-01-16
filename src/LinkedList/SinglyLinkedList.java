@@ -51,7 +51,8 @@ public class SinglyLinkedList<E> {
             temp=temp.next;
         }
     }
-
+//deleting a particular node
+    // deleting a last node
 //node class
     static class Node<E>{
        E data;
