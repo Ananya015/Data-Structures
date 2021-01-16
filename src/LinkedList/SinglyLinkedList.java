@@ -29,7 +29,7 @@ public class SinglyLinkedList<E> {
         temp.next=toAdd;
 
     }
-
+        // deleting a node at particular position
     void delNode(int positionOfToBeDeleted){
         Node temp=head;
         int index=1;
@@ -41,6 +41,8 @@ public class SinglyLinkedList<E> {
         temp.next=deletedNode;
 
     }
+
+
 // printing linkedList
     void print(){
         Node temp=head;
