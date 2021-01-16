@@ -9,7 +9,8 @@ public class MainLinkedList {
         myLL.add ( 44 );
         myLL.add ( 89 );
         myLL.add ( 49 );
-        myLL.atpostion ( 33,2 );
+//        myLL.atpostion ( 33,2 );
+        myLL.delNode ( 2 );
         myLL.print ();
     }
 }

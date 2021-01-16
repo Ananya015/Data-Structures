@@ -29,6 +29,18 @@ public class SinglyLinkedList<E> {
         temp.next=toAdd;
 
     }
+
+    void delNode(int positionOfToBeDeleted){
+        Node temp=head;
+        int index=1;
+        while(index<positionOfToBeDeleted-1){
+            temp=temp.next;
+
+        }
+        Node deletedNode=temp.next.next;
+        temp.next=deletedNode;
+
+    }
 // printing linkedList
     void print(){
         Node temp=head;
