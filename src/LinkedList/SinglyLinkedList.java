@@ -16,7 +16,7 @@ public class SinglyLinkedList<E> {
         }
         temp.next=toAdd;
     }
-
+    //adding a node at specific position
     void atpostion( E data,int  position){
         Node toAdd= new Node (data);
         Node temp=head;
