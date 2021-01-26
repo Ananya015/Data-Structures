@@ -42,6 +42,10 @@ public class SinglyLinkedList<E> {
 
     }
 
+    void deleteduplicates(){
+
+    }
+
 
 // printing linkedList
     void print(){
@@ -53,6 +57,8 @@ public class SinglyLinkedList<E> {
     }
 //deleting a particular node
     // deleting a last node
+
+
 //node class
     static class Node<E>{
        E data;
