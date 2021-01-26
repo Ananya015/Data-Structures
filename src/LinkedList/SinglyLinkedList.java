@@ -42,6 +42,7 @@ public class SinglyLinkedList<E> {
 
     }
 
+    //remove duplicates from sorted(ascending) array
     void deleteduplicates( ){
             Node temp=head;
             if(temp==null) return;
