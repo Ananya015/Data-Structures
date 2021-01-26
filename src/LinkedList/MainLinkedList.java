@@ -7,8 +7,10 @@ public class MainLinkedList {
 
         SinglyLinkedList<Integer> myLL= new SinglyLinkedList<> ();
         myLL.add ( 44 );
-        myLL.add ( 89 );
         myLL.add ( 49 );
+        myLL.add ( 49 );
+        myLL.add ( 42 );
+        myLL.deleteduplicates (  );
 //        myLL.atpostion ( 33,2 );
 //        myLL.delNode ( 2 );
 

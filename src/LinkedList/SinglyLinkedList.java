@@ -42,8 +42,18 @@ public class SinglyLinkedList<E> {
 
     }
 
-    void deleteduplicates(){
+    void deleteduplicates( ){
+            Node temp=head;
+            if(temp==null) return;
+            while(temp.next!=null){
+                if(temp.data==temp.next.data){
+                    temp.next=temp.next.next;
+                }
+                else{
+                    temp=temp.next;
+                }
 
+            }
     }
 
 
