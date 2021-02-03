@@ -64,6 +64,7 @@ public class SinglyLinkedList<E> {
 
         }
     }
+    //printing length of LinkedList
     void lengthOfLinkedList(){
         Node temp=head;
         int count=0;
