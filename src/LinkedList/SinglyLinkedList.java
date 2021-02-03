@@ -56,6 +56,24 @@ public class SinglyLinkedList<E> {
 
             }
     }
+    void reverseLinkedList(){
+        Node temp=head;
+        Node dummy=null;
+        while(temp.next!=null){
+            temp.next=dummy;
+
+        }
+    }
+    void lengthOfLinkedList(){
+        Node temp=head;
+        int count=0;
+        while (temp!=null){
+            count++;
+            temp=temp.next;
+        }
+        System.out.println ("length of LinkedList is: "+count);
+
+    }
 
 
 // printing linkedList
