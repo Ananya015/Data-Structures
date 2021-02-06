@@ -77,8 +77,18 @@ public class SinglyLinkedList<E> {
 
     }
 
+    // deleting a last node
+    public void deleteLastNode(){
+        Node temp=head;
+        while (temp.next.next!=null){
+            temp=temp.next;
+        }
+        Node toremove=temp.next;
+        temp.next=null;
+    }
 
-// printing linkedList
+
+    // printing linkedList
     void print(){
         Node temp=head;
         while (temp!=null){
@@ -86,8 +96,9 @@ public class SinglyLinkedList<E> {
             temp=temp.next;
         }
     }
-//deleting a particular node
-    // deleting a last node
+
+
+
 
 
 //node class
