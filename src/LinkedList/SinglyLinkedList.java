@@ -4,7 +4,7 @@ public class SinglyLinkedList<E> {
 
     Node<E> head;
  //adding new node
-    void add(E data){
+    public void add(E data){
         Node toAdd = new Node ( data );
         if(head==null) {
             head=toAdd;
