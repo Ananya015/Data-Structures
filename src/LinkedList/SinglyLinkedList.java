@@ -99,6 +99,25 @@ public class SinglyLinkedList<E> {
         return toRemove.data;
     }
 
+    public E getLastElement() throws Exception{
+        Node<E> temp=head;
+
+        if(temp==null){
+            throw new Exception ("Cannot remove last element from emptied list");
+        }
+        while (temp.next==null){
+
+            Node<E> toRemove=temp;
+            head=null;
+            return toRemove.data;
+        }
+        while (temp.next.next!=null){
+            temp=temp.next;
+        }
+        Node<E> toRemove=temp.next;
+        return toRemove.data;
+    }
+
    public boolean isEmpty(){
         return head==null;
     }

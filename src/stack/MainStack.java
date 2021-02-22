@@ -6,9 +6,12 @@ public class MainStack{
       stack.push ( 99 );
         stack.push ( 48 );
         stack.push ( 56 );
-//        stack.showStack ();
+       stack.showStack ();
         int popped=stack.pop ();
-        System.out.println (popped);
+        System.out.println ("popped element is : "+ popped);
+
+        int peeked=stack.peek ();
+        System.out.println ("peeked element is : "+peeked);
 
     }
 

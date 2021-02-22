@@ -11,8 +11,8 @@ public class Stack <E>{
     }
 
     //peek
-    void peek(){
-
+    E peek() throws Exception {
+        return mystack.getLastElement ();
     }
 
     //popping
