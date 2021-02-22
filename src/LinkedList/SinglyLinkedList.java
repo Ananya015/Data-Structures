@@ -56,6 +56,7 @@ public class SinglyLinkedList<E> {
 
             }
     }
+    //reverse the linked list
     void reverseLinkedList(){
         Node temp=head;
         Node dummy=null;
@@ -78,18 +79,32 @@ public class SinglyLinkedList<E> {
     }
 
     // deleting a last node
-    public void deleteLastNode(){
-        Node temp=head;
+    public E deleteLastNode() throws Exception{
+        Node<E> temp=head;
+
+        if(temp==null){
+            throw new Exception ("Cannot remove last element from emptied list");
+        }
+        //if list is having only one element
+        if(temp.next==null){
+            Node<E> toRemove=temp;
+            head=null;
+            return toRemove.data;
+        }
         while (temp.next.next!=null){
             temp=temp.next;
         }
-        Node toremove=temp.next;
+        Node<E> toRemove=temp.next;
         temp.next=null;
+        return toRemove.data;
     }
 
+   public boolean isEmpty(){
+        return head==null;
+    }
 
     // printing linkedList
-    void print(){
+   public void print(){
         Node temp=head;
         while (temp!=null){
             System.out.println (temp.data +" ");
