@@ -59,11 +59,15 @@ public class SinglyLinkedList<E> {
     //reverse the linked list
     void reverseLinkedList(){
         Node temp=head;
-        Node dummy=null;
-        while(temp.next!=null){
-            temp.next=dummy;
-
+        Node previous=null;
+        Node next=null;
+        while(temp!=null){
+            next=temp.next;
+            temp.next=previous;
+            previous=temp;
+            temp=next;
         }
+
     }
     //printing length of LinkedList
     void lengthOfLinkedList(){
@@ -131,7 +135,33 @@ public class SinglyLinkedList<E> {
         }
     }
 
+    public boolean findtheelement( E searchkey){
 
+        if(head==null) return false;
+        Node<E> temp=head;
+        while(temp.next!=null){
+            if(temp.data==searchkey)
+                return true;
+                temp=temp.next;
+        }
+
+        return false;
+    }
+
+    void nthElementFromLast(int position){
+        Node<E> mainPoi=head;
+        Node<E> refPoi=head;
+        int count=0;
+        while(count< position){
+            refPoi=refPoi.next;
+            count++;
+        }
+        while (refPoi!=null){
+            refPoi=refPoi.next;
+            mainPoi=mainPoi.next;
+        }
+        System.out.println ("nth element from last is: "+mainPoi.data); ;
+    }
 
 
 
